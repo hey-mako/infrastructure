@@ -16,6 +16,12 @@ variable "runtime" {
   description = "The runtime version for the function"
 }
 
+variable "tags" {
+  default     = {}
+  description = "The list of tags (key-value pairs) assigned to the new function"
+  type        = "map"
+}
+
 variable "timeout" {
   description = "The amount of time that Lambda allows a function to run before terminating it"
 }
